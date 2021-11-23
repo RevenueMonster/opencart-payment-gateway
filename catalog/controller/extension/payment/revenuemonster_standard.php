@@ -53,7 +53,7 @@ class ControllerExtensionPaymentRevenuemonsterStandard extends Controller
                 'storeId'       => $this->config->get('payment_revenuemonster_standard_storeid'),
                 'redirectUrl'   => $data['return'],
                 'notifyUrl'     => $data['notify_url'],
-                'layoutVersion' => 'v2',
+                'layoutVersion' => 'v3',
             );
             try {
                 $response = $sdk->create_order( $payload );
